@@ -1,0 +1,100 @@
+@import "libs/reset.scss";
+
+
+// ********************************************** Déclarations des variables
+$backheader-color: rgb(51, 51, 51);
+$background-color: rgb(209, 209, 209);
+$mainwhite : rgb(255, 255, 255);
+$footercolor : rgb(126, 126, 126);
+// ********************************************** Margin 
+.page {
+    width : 1440px;
+    margin: 0 auto;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+	text-decoration: underline;
+}
+// ********************************************** Background
+html {
+	background-color: $background-color;
+
+}
+
+// ********************************************** Header
+header {
+	background-color: $backheader-color;
+}
+.container_head {
+	display: flex;
+}
+// ********************************************** Main
+main { 
+	background-color: $mainwhite;
+}
+.gradient_border {
+	width: 100%;
+	height: 9px;
+	background: rgb(204,59,210);
+	background: linear-gradient(90deg, rgba(204,59,210,1) 0%, rgba(237,238,23,1) 36%, rgba(240,32,32,1) 69%, rgba(255,255,255,1) 100%);
+}
+.container1 {
+	display: flex;
+	nav {
+		#column-1 {
+			background-color: $background-color;
+		}
+		text-align: center;
+		margin: 1rem;
+		font-size: 3rem;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+
+
+.logo {
+	display: flex;
+	justify-content: space-around;
+}
+.logo_container_1 {
+	background-color: $background-color;
+	width: 200px;
+	height: 65px;
+	transition: width 0.5s cubic-bezier(0.37, 0, 0.63, 1) 0s;
+	img {
+		filter: opacity(0);
+	}
+	&:hover {
+		width: 450px;
+		img {
+			transition-delay: 0.5s;
+			filter: opacity(100);
+		}
+	}
+}
+// ********************************************** Footer
+
+footer {
+	background-color: $footercolor;
+    color: $mainwhite;
+    text-align: center;
+    width:100%;
+	.footContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		.footMenu ,.footMenu2, .footMenu3 {
+			display: flex;
+			flex-direction: column;
+		} 
+	}
+}

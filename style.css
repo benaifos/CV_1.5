@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.page {
+  width: 1440px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  text-decoration: underline;
+}
+
+html {
+  background-color: #d1d1d1;
+}
+
+header {
+  background-color: #333333;
+}
+
+.container_head {
+  display: flex;
+}
+
+main {
+  background-color: white;
+}
+
+.gradient_border {
+  width: 100%;
+  height: 9px;
+  background: #cc3bd2;
+  background: linear-gradient(90deg, #cc3bd2 0%, #edee17 36%, #f02020 69%, white 100%);
+}
+
+.container1 {
+  display: flex;
+}
+.container1 nav {
+  text-align: center;
+  margin: 1rem;
+  font-size: 3rem;
+}
+.container1 nav #column-1 {
+  background-color: #d1d1d1;
+}
+.container1 nav a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo_container_1 {
+  background-color: #d1d1d1;
+  width: 200px;
+  height: 65px;
+  transition: width 0.5s cubic-bezier(0.37, 0, 0.63, 1) 0s;
+}
+.logo_container_1 img {
+  filter: opacity(0);
+}
+.logo_container_1:hover {
+  width: 450px;
+}
+.logo_container_1:hover img {
+  transition-delay: 0.5s;
+  filter: opacity(100);
+}
+
+footer {
+  background-color: #7e7e7e;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+footer .footContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .footContainer .footMenu, footer .footContainer .footMenu2, footer .footContainer .footMenu3 {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
